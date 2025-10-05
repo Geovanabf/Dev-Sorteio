@@ -1,0 +1,82 @@
+/* Importa a fonte "Roboto" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Remove margens e preenchimentos padrão, e define caixa de dimensionamento e fonte base */
+* {
+    margin: 0; /* Remove espaçamento externo padrão */
+    padding: 0; /* Remove espaçamento interno padrão */
+    outline: none; /* Remove a borda de foco padrão */
+    box-sizing: border-box; /* Faz com que width e height incluam padding e border */
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão como Roboto */
+}
+
+/* Estiliza o body (corpo do site) */
+body {
+    background: black; /* Define o fundo como preto */
+    display: flex; /* Ativa o Flexbox para layout */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    flex-direction: column; /* Organiza os itens em coluna (um embaixo do outro) */
+    min-height: 100vh; /* Faz o body ocupar no mínimo 100% da altura da tela */
+}
+
+/* Estiliza o título h2 */
+h2 {
+    color: #FFF; /* Cor do texto: branco */
+    font-size: 32px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte (normal) */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 26px; /* Espaço abaixo do h2 */
+}
+
+/* Estiliza todos os inputs */
+input {
+    border-radius: 14px; /* Bordas arredondadas */
+    border: 1px solid rgba(255, 255, 255, 0.20); /* Borda levemente visível */
+    background: rgba(255, 255, 255, 0.25); /* Fundo branco com transparência */
+    width: 342px; /* Largura do input */
+    height: 76px; /* Altura do input */
+    padding-left: 20px; /* Espaço interno à esquerda para o texto */
+    font-size: 40px; /* Tamanho da fonte do input */
+    font-style: normal; /* Estilo normal (sem itálico) */
+    font-weight: 500; /* Peso da fonte (semibold) */
+    line-height: normal; /* Altura da linha padrão */
+    color: #FFF; /* Cor do texto: branco */
+    opacity: 0.7; /* Leve transparência */
+}
+
+/* Este seletor está incorreto: input-min não é uma tag HTML válida! */
+/* Se quiser aplicar a uma classe, deve ser ".input-min" */
+/* Exemplo: */
+.input-min {
+    margin-right: 62px; /* Espaço à direita (se for usado para separar inputs) */
+}
+
+/* Estiliza o botão */
+button {
+    border-radius: 10px; /* Bordas arredondadas */
+    background: #AEC346; /* Cor de fundo do botão (verde claro) */
+    box-shadow: 0 18px 40px 0 rgba(174, 195, 70, 0.35); /* Sombra para efeito de profundidade */
+    width: 342px; /* Largura do botão */
+    height: 72px; /* Altura do botão */
+    color: #FFF; /* Cor do texto: branco */
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 36px; /* Tamanho da fonte */
+    font-style: normal;
+    font-weight: 700; /* Peso da fonte: negrito */
+    line-height: 2.5px; /* Altura da linha (estranhamente pequena — pode ajustar) */
+    margin-top: 80px; /* Espaço acima do botão */
+    cursor: pointer; /* Mostra a mãozinha ao passar o mouse */
+    border: none; /* Remove a borda padrão */
+    margin-bottom: 150px; /* Espaço abaixo do botão */
+}
+
+/* Efeito de hover no botão (ao passar o mouse) */
+button:hover {
+    opacity: 0.9; /* Reduz um pouco a opacidade */
+}
+
+/* Efeito ao clicar no botão */
+button:active {
+    opacity: 0.8; /* Reduz mais a opacidade */
+}
